@@ -4,6 +4,11 @@ A showcase of modern HTML and CSS capabilities as of May 2025, with minimal Java
 
 **100% of the code & tests is written by AI.**
 
+**Check it out** here:
+
+https://delneg.github.io/modern-html-showcase/
+
+
 ## Features
 
 - **Semantic Structure**: Proper use of HTML5 semantic elements
