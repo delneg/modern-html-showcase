@@ -1,0 +1,1576 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Modern HTML & CSS Showcase - May 2025</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="A showcase of modern HTML and CSS capabilities as of May 2025, with minimal JavaScript support.">
+
+  <meta property="og:title" content="Modern HTML & CSS Showcase - May 2025">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:image" content="icon.png">
+  <meta property="og:image:alt" content="Modern HTML & CSS Showcase logo">
+  <meta property="og:description" content="A showcase of modern HTML and CSS capabilities as of May 2025, with minimal JavaScript support.">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+  >
+</head>
+
+<body>
+  <a href="#main-content" style="position: absolute; top: -40px; left: 0; background: #3498db; color: white; padding: 10px; z-index: 100; transition: top 0.3s; border-radius: 0.25rem; text-decoration: none;" class="skip-link" tabindex="0">Skip to main content</a>
+  <main id="main-content" class="container" tabindex="-1">
+    <header>
+      <hgroup>
+        <h1>Modern HTML & CSS Showcase</h1>
+        <h2>Latest capabilities as of May 2025, with minimal JavaScript</h2>
+      </hgroup>
+      <p>
+        This page demonstrates the power of modern HTML and CSS with minimal JavaScript support.
+        From interactive elements to advanced styling, discover what's possible with modern web standards in 2025.
+      </p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#semantic-structure">Semantic Structure</a></li>
+        <li><a href="#text-formatting">Text Formatting</a></li>
+        <li><a href="#interactive-elements">Interactive Elements</a></li>
+        <li><a href="#forms">Form Elements</a></li>
+        <li><a href="#advanced-features">Advanced Features</a></li>
+        <li><a href="#accessibility">Accessibility</a></li>
+        <li><a href="#css-animations">CSS Animations</a></li>
+        <li><a href="#responsive-design">Responsive Design</a></li>
+        <li><a href="#advanced-layouts">Advanced Layouts</a></li>
+        <li><a href="#modern-selectors">Modern CSS Selectors</a></li>
+        <li><a href="#dark-mode">Dark Mode</a></li>
+        <li><a href="#print-styles">Print Styles</a></li>
+        <li><a href="#minimal-js-features">Minimal JS Features</a></li>
+      </ul>
+    </nav>
+
+    <section id="semantic-structure">
+      <h2>Semantic Structure</h2>
+      <p>
+        Modern HTML provides a rich set of semantic elements that give meaning to your content
+        and improve accessibility, SEO, and maintainability.
+      </p>
+
+      <article>
+        <header>
+          <h3>Article Example</h3>
+          <p>Published: <time datetime="2025-05-15">May 15, 2025</time></p>
+        </header>
+        <p>
+          This is an example of an article with proper semantic structure.
+          Articles can contain their own headers, footers, and sections.
+        </p>
+        <footer>
+          <p>Author:</p>
+          <address>Web Standards Committee</address>
+        </footer>
+      </article>
+
+      <aside>
+        <h3>Related Information</h3>
+        <p>
+          The <code>&lt;aside&gt;</code> element represents content that is tangentially related
+          to the content around it, such as sidebars or call-out boxes.
+        </p>
+      </aside>
+    </section>
+
+    <section id="text-formatting">
+      <h2>Text Formatting</h2>
+      <p>
+        HTML provides various elements for text formatting without requiring CSS or JavaScript.
+      </p>
+
+      <h3>Basic Formatting</h3>
+      <div class="grid">
+        <div style="background-color: #f8f9fa; padding: 1rem; border-radius: 0.5rem; border-left: 4px solid #3498db;">
+          <ul>
+            <li><strong>Bold text</strong> using <code>&lt;strong&gt;</code></li>
+            <li><em>Emphasized text</em> using <code>&lt;em&gt;</code></li>
+            <li><u>Underlined text</u> using <code>&lt;u&gt;</code></li>
+            <li><s>Strikethrough text</s> using <code>&lt;s&gt;</code></li>
+            <li><mark>Highlighted text</mark> using <code>&lt;mark&gt;</code></li>
+            <li><small>Small text</small> using <code>&lt;small&gt;</code></li>
+            <li>Text with <sub>subscript</sub> using <code>&lt;sub&gt;</code></li>
+            <li>Text with <sup>superscript</sup> using <code>&lt;sup&gt;</code></li>
+          </ul>
+        </div>
+        <div style="background-color: #f8f9fa; padding: 1rem; border-radius: 0.5rem; border-left: 4px solid #e74c3c;">
+          <h4>Advanced Text Formatting</h4>
+          <p><ruby>漢字<rt>かんじ</rt></ruby> - Ruby annotations for East Asian typography</p>
+          <p>Text direction: <bdo dir="rtl">This text will go right to left</bdo></p>
+          <p>Defining terms: <dfn>HTML</dfn> is the standard markup language for documents designed to be displayed in a web browser.</p>
+          <p>Variable: The equation is <var>x</var> = <var>y</var> + 2</p>
+          <p>Sample output: <samp>Hello, World!</samp></p>
+        </div>
+      </div>
+
+      <h3>Code and Keyboard</h3>
+      <p>
+        Use <code>&lt;code&gt;</code> for inline code like <code>const x = 5;</code>
+        and <kbd>&lt;kbd&gt;</kbd> for keyboard inputs like <kbd>Ctrl</kbd> + <kbd>S</kbd>.
+      </p>
+
+      <pre style="background-color: #2c3e50; color: #ecf0f1; padding: 1rem; border-radius: 0.5rem; overflow-x: auto;"><code>// This is a code block with syntax highlighting-like styling
+function greet() {
+  return "Hello, world!";
+}</code></pre>
+
+      <h3>Quotes and Citations</h3>
+      <div class="grid">
+        <blockquote cite="https://www.w3.org/" style="border-left: 4px solid #3498db; margin-left: 0; background-color: #f8f9fa; padding: 1rem; border-radius: 0.5rem;">
+          <p>
+            The World Wide Web Consortium (W3C) is an international community where Member organizations,
+            a full-time staff, and the public work together to develop Web standards.
+          </p>
+          <footer>— <cite>W3C Mission Statement</cite></footer>
+        </blockquote>
+        <blockquote cite="https://developer.mozilla.org/" style="border-left: 4px solid #e74c3c; margin-left: 0; background-color: #f8f9fa; padding: 1rem; border-radius: 0.5rem;">
+          <p>
+            The HTML <code>&lt;blockquote&gt;</code> Element (or HTML Block Quotation Element) indicates that the enclosed text is an extended quotation.
+          </p>
+          <footer>— <cite>MDN Web Docs</cite></footer>
+        </blockquote>
+      </div>
+
+      <h3>Abbreviations and Details</h3>
+      <div class="grid">
+        <div>
+          <p>
+            <abbr title="HyperText Markup Language" style="text-decoration: underline dotted; cursor: help;">HTML</abbr> and
+            <abbr title="Cascading Style Sheets" style="text-decoration: underline dotted; cursor: help;">CSS</abbr> are the building blocks of the web.
+            <abbr title="World Wide Web Consortium" style="text-decoration: underline dotted; cursor: help;">W3C</abbr> maintains these standards.
+          </p>
+        </div>
+        <div>
+          <details style="background-color: #f8f9fa; padding: 1rem; border-radius: 0.5rem; border: 1px solid #dee2e6;">
+            <summary style="cursor: pointer; font-weight: bold;">More about HTML and CSS</summary>
+            <p>HTML (HyperText Markup Language) is the standard markup language for documents designed to be displayed in a web browser.</p>
+            <p>CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="interactive-elements">
+      <h2>Interactive Elements</h2>
+      <p>
+        Modern HTML includes several interactive elements that don't require JavaScript.
+      </p>
+
+      <h3>Details and Summary</h3>
+      <details>
+        <summary>Click to expand this section</summary>
+        <p>
+          The <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> elements provide
+          native HTML support for expandable content without requiring JavaScript.
+        </p>
+      </details>
+
+      <h3 id="modal-dialog-top">CSS-Only Modal Dialogs</h3>
+      <a href="#modal-dialog" class="button">Open Dialog</a>
+
+      <div id="modal-dialog" class="modal">
+        <div class="modal-content">
+          <h4>This is a CSS-only modal dialog</h4>
+          <p>No JavaScript required!</p>
+          <a href="#modal-dialog-top" class="button">Close</a>
+        </div>
+      </div>
+
+      <style>
+        .button {
+          display: inline-block;
+          padding: 0.5rem 1rem;
+          background-color: #3498db;
+          color: white;
+          border: none;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          text-decoration: none;
+        }
+
+        .modal {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0,0,0,0.5);
+          z-index: 999;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .modal:target {
+          display: flex;
+        }
+
+        .modal-content {
+          background: white;
+          padding: 2rem;
+          border-radius: 0.5rem;
+          box-shadow: 0 0 10px rgba(0,0,0,0.3);
+          max-width: 90%;
+          max-height: 90%;
+          overflow: auto;
+        }
+      </style>
+
+      <h3>Native Popovers</h3>
+      <button popovertarget="myPopover">Show Popover</button>
+      <div popover id="myPopover" class="popover">
+        <h4>Native HTML Popover</h4>
+        <p>This is a native popover element, new in HTML as of 2024.</p>
+      </div>
+    </section>
+
+    <section id="forms">
+      <h2>Form Elements</h2>
+      <p>
+        HTML forms have evolved significantly, offering rich validation and input types without JavaScript.
+      </p>
+
+      <article style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border: 1px solid #dee2e6;">
+        <h3>Native Form Validation</h3>
+        <p>Modern HTML provides powerful built-in validation capabilities:</p>
+
+        <form action="#" method="get" class="form-validation-example">
+          <div class="grid">
+            <div>
+              <label for="username">Username (letters only):</label>
+              <input type="text" id="username" name="username" pattern="[A-Za-z]+" title="Username must contain only letters" required style="border: 1px solid #ced4da; border-radius: 0.25rem;">
+              <small>Letters only, no numbers or special characters</small>
+            </div>
+
+            <div>
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" title="Phone format: 123-456-7890" style="border: 1px solid #ced4da; border-radius: 0.25rem;">
+              <small>Format: 123-456-7890</small>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div>
+              <label for="zip">ZIP Code:</label>
+              <input type="text" id="zip" name="zip" pattern="[0-9]{5}" title="Five digit zip code" placeholder="12345" style="border: 1px solid #ced4da; border-radius: 0.25rem;">
+              <small>5-digit US ZIP code</small>
+            </div>
+
+            <div>
+              <label for="url">Website:</label>
+              <input type="url" id="url" name="url" placeholder="https://example.com" style="border: 1px solid #ced4da; border-radius: 0.25rem;">
+              <small>Must be a valid URL starting with https://</small>
+            </div>
+          </div>
+
+          <button type="submit" style="background-color: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; margin-top: 1rem;">Validate</button>
+        </form>
+      </article>
+
+      <form action="#" method="get" style="background-color: #fff; padding: 1.5rem; border-radius: 0.5rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <fieldset style="border: 1px solid #dee2e6; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1.5rem;">
+          <legend style="padding: 0 0.5rem; font-weight: bold; color: #3498db;">Personal Information</legend>
+
+          <div class="grid">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required style="border: 1px solid #ced4da; border-radius: 0.25rem;">
+            </div>
+
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="your.email@example.com" required style="border: 1px solid #ced4da; border-radius: 0.25rem;">
+            </div>
+          </div>
+
+          <div class="grid">
+            <div>
+              <label for="password">Password (8-20 characters):</label>
+              <input type="password" id="password" name="password" minlength="8" maxlength="20" required style="border: 1px solid #ced4da; border-radius: 0.25rem;">
+              <meter id="password-strength" value="0" min="0" max="4" low="2" high="3" optimum="4" style="width: 100%; margin-top: 0.5rem;"></meter>
+              <small>Password strength indicator</small>
+            </div>
+
+            <div>
+              <label for="dob">Date of Birth:</label>
+              <input type="date" id="dob" name="dob" style="border: 1px solid #ced4da; border-radius: 0.25rem;">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset style="border: 1px solid #dee2e6; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1.5rem;">
+          <legend style="padding: 0 0.5rem; font-weight: bold; color: #e74c3c;">Preferences</legend>
+
+          <div class="grid">
+            <div>
+              <label for="color">Favorite Color:</label>
+              <input type="color" id="color" name="color" value="#4a90e2" style="width: 100%; border: 1px solid #ced4da; border-radius: 0.25rem;">
+            </div>
+
+            <div>
+              <label for="satisfaction">Satisfaction Level:</label>
+              <input type="range" id="satisfaction" name="satisfaction" min="0" max="100" value="75" style="width: 100%;" oninput="document.querySelector('output[for=\'satisfaction\']').textContent = this.value + '%';">
+              <div style="display: flex; justify-content: space-between;">
+                <small>Low</small>
+                <output for="satisfaction" style="font-weight: bold;">75%</output>
+                <small>High</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div>
+              <label for="browser">Preferred Browser:</label>
+              <input type="text" id="browser" list="browsers" placeholder="Select or type" style="border: 1px solid #ced4da; border-radius: 0.25rem;">
+              <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+                <option value="Opera">
+              </datalist>
+            </div>
+
+            <div>
+              <label for="frequency">Update Frequency:</label>
+              <select id="frequency" name="frequency" style="border: 1px solid #ced4da; border-radius: 0.25rem; width: 100%; padding: 0.5rem;">
+                <option value="daily">Daily</option>
+                <option value="weekly" selected>Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="never">Never</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="margin-top: 1rem; padding: 1rem; background-color: #f8f9fa; border-radius: 0.5rem;">
+            <div style="margin-bottom: 0.5rem;">
+              <label style="display: flex; align-items: center; gap: 0.5rem;">
+                <input type="checkbox" name="newsletter" value="yes" style="margin: 0;">
+                <span>Subscribe to newsletter</span>
+              </label>
+            </div>
+
+            <div>
+              <p style="margin-bottom: 0.5rem; font-weight: bold;">Preferred Contact Method:</p>
+              <div style="display: flex; gap: 1rem;">
+                <label style="display: flex; align-items: center; gap: 0.5rem;">
+                  <input type="radio" name="contact" value="email" checked style="margin: 0;">
+                  <span>Email</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem;">
+                  <input type="radio" name="contact" value="phone" style="margin: 0;">
+                  <span>Phone</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem;">
+                  <input type="radio" name="contact" value="sms" style="margin: 0;">
+                  <span>SMS</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset style="border: 1px solid #dee2e6; border-radius: 0.5rem; padding: 1rem; margin-bottom: 1.5rem;">
+          <legend style="padding: 0 0.5rem; font-weight: bold; color: #2ecc71;">Additional Information</legend>
+
+          <label for="feedback">Feedback:</label>
+          <textarea id="feedback" name="feedback" rows="4" placeholder="Share your thoughts..." style="width: 100%; border: 1px solid #ced4da; border-radius: 0.25rem; padding: 0.5rem;"></textarea>
+
+          <div style="margin-top: 1rem;">
+            <label for="file" style="display: block; margin-bottom: 0.5rem;">Upload File (PDF only):</label>
+            <input type="file" id="file" name="file" accept=".pdf" style="width: 100%; padding: 0.5rem; border: 1px dashed #ced4da; border-radius: 0.25rem; background-color: #f8f9fa;">
+          </div>
+        </fieldset>
+
+        <div class="grid" style="margin-top: 1.5rem;">
+          <button type="submit" style="background-color: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Submit</button>
+          <button type="reset" style="background-color: #e74c3c; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="advanced-features">
+      <h2>Advanced Features</h2>
+
+      <h3>HTML Templates</h3>
+      <template id="user-card">
+        <div class="user-card">
+          <img src="icon.png" alt="User avatar">
+          <div class="user-info">
+            <h4>User Name</h4>
+            <p>Role: Developer</p>
+          </div>
+        </div>
+      </template>
+      <p>
+        The template above is not rendered but can be used as a blueprint for dynamic content.
+        In a real application, JavaScript would clone and populate this template.
+      </p>
+
+      <h3>Progress and Meters</h3>
+      <div class="grid">
+        <div>
+          <label for="task-progress">Task Progress:</label>
+          <progress id="task-progress" value="70" max="100">70%</progress>
+        </div>
+        <div>
+          <label for="disk-usage">Disk Usage:</label>
+          <meter id="disk-usage" value="0.6" min="0" max="1" low="0.3" high="0.7" optimum="0.5">60%</meter>
+        </div>
+      </div>
+
+      <h3>Picture Element for Responsive Images</h3>
+      <picture>
+        <source media="(min-width: 800px)" srcset="icon.png">
+        <source media="(min-width: 400px)" srcset="icon.png">
+        <img src="icon.png" alt="Responsive image example">
+      </picture>
+
+      <h3>CSS Variables (Custom Properties)</h3>
+      <div style="--custom-color: #3498db; color: var(--custom-color); padding: 1rem; border-radius: 0.5rem; background-color: #f8f9fa; margin: 1rem 0;">
+        This text uses a CSS custom property for its color.
+      </div>
+
+      <h3>CSS Grid Layout</h3>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 20px 0;">
+        <div style="background-color: #f1c40f; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Grid Item 1</div>
+        <div style="background-color: #e74c3c; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); color: white;">Grid Item 2</div>
+        <div style="background-color: #3498db; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); color: white;">Grid Item 3</div>
+        <div style="background-color: #2ecc71; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); color: white;">Grid Item 4</div>
+        <div style="background-color: #9b59b6; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); color: white;">Grid Item 5</div>
+        <div style="background-color: #1abc9c; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); color: white;">Grid Item 6</div>
+      </div>
+    </section>
+
+    <section id="accessibility">
+      <h2>Accessibility Features</h2>
+      <p>
+        Modern HTML provides numerous features to improve accessibility without requiring JavaScript.
+      </p>
+
+      <h3>ARIA Attributes</h3>
+      <div role="alert" aria-live="assertive" style="background-color: #f8d7da; color: #721c24; padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+        This is an alert message that would be announced by screen readers.
+      </div>
+
+      <h3>Skip Navigation</h3>
+      <p>
+        A skip navigation link (usually the first focusable element on a page) allows keyboard users to bypass navigation menus:
+      </p>
+      <div style="position: relative; padding: 1rem; border: 1px solid #ddd; border-radius: 0.5rem; margin: 1rem 0;">
+        <p>A skip link has been added at the top of the page. Press Tab when the page loads to see it appear.</p>
+      </div>
+
+      <h3>Accessible Form Labels</h3>
+      <form>
+        <div class="grid">
+          <label for="accessible-name">
+            Name
+            <input type="text" id="accessible-name" name="accessible-name" aria-describedby="name-help">
+          </label>
+          <small id="name-help">Enter your full name as it appears on your ID.</small>
+        </div>
+      </form>
+
+      <h3>Focus Management</h3>
+      <div class="grid">
+        <button style="background-color: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; outline: none; transition: all 0.3s;">
+          Standard Button
+        </button>
+        <button style="background-color: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; outline: none; transition: all 0.3s; position: relative; overflow: hidden;">
+          <span style="position: relative; z-index: 1;">Enhanced Focus Button</span>
+          <span style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.1); transform: scale(0); transition: transform 0.3s; border-radius: 50%;"></span>
+        </button>
+      </div>
+    </section>
+
+    <section id="css-animations">
+      <h2>CSS Animations</h2>
+      <p>
+        Modern CSS provides powerful animation capabilities without requiring JavaScript.
+      </p>
+
+      <h3>Hover Effects</h3>
+      <div class="grid">
+        <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s;">
+          Hover Me
+        </a>
+        <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #e74c3c; color: white; text-decoration: none; border-radius: 5px; transition: all 0.3s; position: relative; overflow: hidden;">
+          <span style="position: relative; z-index: 1;">Hover For Effect</span>
+          <span style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.1); transform: scale(0); transition: transform 0.3s; border-radius: 50%;"></span>
+        </a>
+      </div>
+
+      <h3>Keyframe Animations</h3>
+      <div style="display: flex; justify-content: space-around; margin: 2rem 0;">
+        <div style="width: 50px; height: 50px; background-color: #3498db; animation: pulse 2s infinite; border-radius: 50%;"></div>
+        <div style="width: 50px; height: 50px; background-color: #e74c3c; animation: bounce 2s infinite; border-radius: 50%;"></div>
+        <div style="width: 50px; height: 50px; background-color: #2ecc71; animation: spin 2s infinite linear; border-radius: 50%;"></div>
+      </div>
+
+      <style>
+        @keyframes pulse {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.2); }
+          100% { transform: scale(1); }
+        }
+        @keyframes bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-20px); }
+        }
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      </style>
+
+      <h3>CSS Transitions</h3>
+      <div class="grid">
+        <div class="expand-box">
+          Hover to expand
+        </div>
+        <div class="shrink-box">
+          Hover to shrink
+        </div>
+      </div>
+
+      <style>
+        .expand-box {
+          background-color: #3498db;
+          height: 50px;
+          transition: all 0.5s;
+          border-radius: 5px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+        }
+
+        .expand-box:hover {
+          height: 100px;
+          background-color: #2980b9;
+        }
+
+        .shrink-box {
+          background-color: #e74c3c;
+          width: 100%;
+          height: 50px;
+          transition: all 0.5s;
+          border-radius: 5px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+        }
+
+        .shrink-box:hover {
+          width: 50%;
+          margin-left: 25%;
+          background-color: #c0392b;
+        }
+      </style>
+    </section>
+
+    <section id="responsive-design">
+      <h2>Responsive Design</h2>
+      <p>
+        Modern HTML and CSS provide powerful tools for creating responsive designs without JavaScript.
+      </p>
+
+      <h3>Responsive Typography</h3>
+      <h4 style="font-size: clamp(1.5rem, 5vw, 3rem); line-height: 1.2; margin: 1rem 0;">
+        This heading uses clamp() for responsive sizing
+      </h4>
+      <p style="font-size: clamp(1rem, 2vw, 1.5rem); line-height: 1.5;">
+        This paragraph also uses clamp() to ensure the text is readable on all devices without requiring media queries.
+      </p>
+
+      <h3>Container Queries</h3>
+      <div style="container-type: inline-size; resize: horizontal; overflow: auto; border: 1px dashed #ccc; padding: 1rem; max-width: 100%;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+          <div style="background-color: #3498db; padding: 1rem; color: white; border-radius: 5px;">Card 1</div>
+          <div style="background-color: #e74c3c; padding: 1rem; color: white; border-radius: 5px;">Card 2</div>
+          <div style="background-color: #2ecc71; padding: 1rem; color: white; border-radius: 5px;">Card 3</div>
+          <div style="background-color: #f1c40f; padding: 1rem; color: white; border-radius: 5px;">Card 4</div>
+        </div>
+        <p style="margin-top: 1rem; font-style: italic;">Resize this container to see the cards reflow</p>
+      </div>
+
+      <h3>Aspect Ratio</h3>
+      <div class="grid">
+        <div style="aspect-ratio: 16/9; background-color: #3498db; display: flex; align-items: center; justify-content: center; color: white; border-radius: 5px;">
+          16:9 Aspect Ratio
+        </div>
+        <div style="aspect-ratio: 1/1; background-color: #e74c3c; display: flex; align-items: center; justify-content: center; color: white; border-radius: 5px;">
+          1:1 Aspect Ratio
+        </div>
+      </div>
+    </section>
+
+    <section id="advanced-layouts">
+      <h2>Advanced Layouts</h2>
+      <p>
+        Modern CSS provides powerful layout capabilities without requiring JavaScript.
+      </p>
+
+      <h3>CSS Flexbox</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0;">
+        <div style="flex: 1 1 200px; background-color: #3498db; padding: 1rem; color: white; border-radius: 5px;">Flex Item 1</div>
+        <div style="flex: 2 1 200px; background-color: #e74c3c; padding: 1rem; color: white; border-radius: 5px;">Flex Item 2 (grows more)</div>
+        <div style="flex: 1 1 200px; background-color: #2ecc71; padding: 1rem; color: white; border-radius: 5px;">Flex Item 3</div>
+      </div>
+
+      <h3>CSS Grid Advanced</h3>
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(3, 100px); gap: 10px; margin: 1rem 0;">
+        <div style="grid-column: span 2; grid-row: span 2; background-color: #3498db; padding: 1rem; color: white; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+          Spans 2x2
+        </div>
+        <div style="background-color: #e74c3c; padding: 1rem; color: white; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+          1x1
+        </div>
+        <div style="background-color: #2ecc71; padding: 1rem; color: white; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+          1x1
+        </div>
+        <div style="grid-column: span 2; background-color: #f1c40f; padding: 1rem; color: white; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+          Spans 2x1
+        </div>
+        <div style="background-color: #9b59b6; padding: 1rem; color: white; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+          1x1
+        </div>
+        <div style="background-color: #1abc9c; padding: 1rem; color: white; border-radius: 5px; display: flex; align-items: center; justify-content: center;">
+          1x1
+        </div>
+      </div>
+
+      <h3>CSS Subgrid</h3>
+      <p>Subgrid allows nested grids to inherit the track sizing of their parent grid, enabling complex layouts with perfect alignment.</p>
+      <div style="display: grid; grid-template-columns: repeat(9, 1fr); gap: 10px; margin: 1rem 0; border: 1px dashed #ccc; padding: 1rem;">
+        <div style="grid-column: span 3; background-color: #3498db; padding: 1rem; color: white; border-radius: 5px; text-align: center;">
+          Parent Grid Item 1
+        </div>
+        <div style="grid-column: span 6; display: grid; grid-template-columns: subgrid; gap: 10px;">
+          <div style="grid-column: span 2; background-color: #e74c3c; padding: 1rem; color: white; border-radius: 5px; text-align: center;">
+            Subgrid Item 1
+          </div>
+          <div style="grid-column: span 2; background-color: #2ecc71; padding: 1rem; color: white; border-radius: 5px; text-align: center;">
+            Subgrid Item 2
+          </div>
+          <div style="grid-column: span 2; background-color: #f1c40f; padding: 1rem; color: white; border-radius: 5px; text-align: center;">
+            Subgrid Item 3
+          </div>
+        </div>
+      </div>
+
+      <h3>Multi-column Layout</h3>
+      <div style="column-count: 3; column-gap: 2rem; margin: 1rem 0;">
+        <p>This is a multi-column layout that automatically balances the content between columns. It's perfect for text-heavy content like articles or blog posts.</p>
+        <p>The content flows naturally from one column to the next, creating a newspaper-like reading experience that works well on larger screens.</p>
+        <p>On smaller screens, the number of columns will automatically reduce to ensure readability is maintained without requiring JavaScript.</p>
+        <p>You can also control the width of columns instead of the count, allowing for more responsive designs.</p>
+      </div>
+
+      <h3>CSS Scroll Snap</h3>
+      <p>Scroll Snap provides a way to create smooth, controlled scrolling experiences without JavaScript.</p>
+      <div style="overflow-x: auto; scroll-snap-type: x mandatory; display: flex; gap: 1rem; padding: 1rem; border: 1px solid #dee2e6; border-radius: 0.5rem; margin: 1rem 0;">
+        <div style="scroll-snap-align: start; flex: 0 0 80%; background-color: #3498db; padding: 2rem; color: white; border-radius: 0.5rem; text-align: center;">
+          <h4>Slide 1</h4>
+          <p>Scroll horizontally to see the next slide. The scroll will snap to each slide.</p>
+        </div>
+        <div style="scroll-snap-align: start; flex: 0 0 80%; background-color: #e74c3c; padding: 2rem; color: white; border-radius: 0.5rem; text-align: center;">
+          <h4>Slide 2</h4>
+          <p>Notice how the scrolling snaps to the beginning of each slide.</p>
+        </div>
+        <div style="scroll-snap-align: start; flex: 0 0 80%; background-color: #2ecc71; padding: 2rem; color: white; border-radius: 0.5rem; text-align: center;">
+          <h4>Slide 3</h4>
+          <p>This creates a carousel-like effect without any JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="modern-selectors">
+      <h2>Modern CSS Selectors</h2>
+      <p>
+        CSS has evolved with powerful new selectors that make complex styling possible without JavaScript.
+      </p>
+
+      <h3>The :has() Selector</h3>
+      <p>The :has() selector allows you to select elements based on their children or descendants - a "parent selector" that was long requested.</p>
+
+      <div class="has-demo" style="margin: 1rem 0; padding: 1rem; border: 1px solid #dee2e6; border-radius: 0.5rem;">
+        <div class="card">
+          <h4>Card with Image</h4>
+          <img src="icon.png" alt="Icon" style="max-width: 100px; height: auto;">
+          <p>This card contains an image.</p>
+        </div>
+
+        <div class="card">
+          <h4>Card without Image</h4>
+          <p>This card does not contain an image.</p>
+        </div>
+
+        <div class="card">
+          <h4>Another Card with Image</h4>
+          <img src="icon.png" alt="Icon" style="max-width: 100px; height: auto;">
+          <p>This card also contains an image.</p>
+        </div>
+      </div>
+
+      <style>
+        .has-demo .card {
+          padding: 1rem;
+          margin-bottom: 1rem;
+          border-radius: 0.5rem;
+          background-color: #f8f9fa;
+        }
+
+        /* Cards with images have a different style */
+        .has-demo .card:has(img) {
+          border-left: 4px solid #3498db;
+          background-color: #ebf5fb;
+        }
+
+        /* Cards without images have a different style */
+        .has-demo .card:not(:has(img)) {
+          border-left: 4px solid #e74c3c;
+          background-color: #fdedec;
+        }
+      </style>
+
+      <h3>The :is() and :where() Selectors</h3>
+      <p>These selectors help simplify complex selector lists and control specificity.</p>
+
+      <div class="is-where-demo" style="margin: 1rem 0; padding: 1rem; border: 1px solid #dee2e6; border-radius: 0.5rem;">
+        <header>
+          <h4>Demo Header</h4>
+          <p>This paragraph is inside a header.</p>
+        </header>
+
+        <article>
+          <h4>Demo Article</h4>
+          <p>This paragraph is inside an article.</p>
+          <div class="box">
+            <p>This paragraph is inside a div inside an article.</p>
+          </div>
+        </article>
+
+        <footer>
+          <h4>Demo Footer</h4>
+          <p>This paragraph is inside a footer.</p>
+        </footer>
+      </div>
+
+      <style>
+        /* Using :is() to target paragraphs in multiple containers */
+        .is-where-demo :is(header, footer) p {
+          color: #3498db;
+          font-style: italic;
+        }
+
+        /* Using :where() for the same purpose but with lower specificity */
+        .is-where-demo :where(article) p {
+          color: #e74c3c;
+        }
+
+        /* This will override the :where() selector due to higher specificity */
+        .is-where-demo article .box p {
+          color: #2ecc71;
+          font-weight: bold;
+        }
+      </style>
+
+      <h3>The :focus-visible Selector</h3>
+      <p>This selector applies styles only when the focus is from keyboard navigation, improving the user experience.</p>
+
+      <div style="margin: 1rem 0;">
+        <button class="focus-visible-demo" style="padding: 0.5rem 1rem; background-color: #3498db; color: white; border: none; border-radius: 0.25rem; cursor: pointer;">
+          Click or Tab to Focus
+        </button>
+      </div>
+
+      <style>
+        .focus-visible-demo:focus {
+          /* Basic focus style */
+          outline: 2px solid transparent;
+        }
+
+        .focus-visible-demo:focus-visible {
+          /* Enhanced focus style for keyboard navigation */
+          outline: 2px solid #e74c3c;
+          outline-offset: 2px;
+          box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.3);
+        }
+      </style>
+
+      <h3>CSS Logical Properties</h3>
+      <p>Logical properties and values provide a way to control layout through logical, rather than physical, direction and dimension mappings.</p>
+
+      <div class="logical-props-demo" style="margin: 1rem 0; padding: 1rem; border: 1px solid #dee2e6; border-radius: 0.5rem; display: flex; flex-wrap: wrap; gap: 1rem;">
+        <div class="physical-box">
+          <h4>Physical Properties</h4>
+          <p>Using left, right, top, bottom</p>
+        </div>
+
+        <div class="logical-box">
+          <h4>Logical Properties</h4>
+          <p>Using inline-start, inline-end, block-start, block-end</p>
+        </div>
+
+        <div class="logical-box rtl">
+          <h4>Logical Properties (RTL)</h4>
+          <p>Same logical properties, different direction</p>
+        </div>
+      </div>
+
+      <style>
+        .logical-props-demo > div {
+          flex: 1 1 300px;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          background-color: #f8f9fa;
+        }
+
+        .physical-box {
+          border-left: 4px solid #3498db;
+          margin-left: 1rem;
+          padding-left: 1rem;
+        }
+
+        .logical-box {
+          border-inline-start: 4px solid #e74c3c;
+          margin-inline-start: 1rem;
+          padding-inline-start: 1rem;
+        }
+
+        .rtl {
+          direction: rtl;
+        }
+      </style>
+    </section>
+
+    <section id="dark-mode">
+      <h2>Dark Mode</h2>
+      <p>
+        Modern CSS makes it easy to implement dark mode without JavaScript using CSS custom properties and media queries.
+      </p>
+
+      <div class="theme-demo">
+        <header class="theme-header">
+          <h3>CSS-Only Theme Switching</h3>
+          <p>This demo shows how to implement a theme toggle without JavaScript.</p>
+
+          <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch" class="theme-switch">
+            <label for="theme-switch" class="theme-switch-label">
+              <span class="theme-switch-inner"></span>
+              <span class="theme-switch-switch"></span>
+            </label>
+            <span class="theme-label">Toggle Dark Mode</span>
+          </div>
+        </header>
+
+        <div class="theme-content">
+          <div class="theme-card">
+            <h4>Card Title</h4>
+            <p>This card automatically adapts to the selected theme. All colors are controlled by CSS variables.</p>
+            <button class="theme-button">Action Button</button>
+          </div>
+
+          <div class="theme-card">
+            <h4>How It Works</h4>
+            <p>The checkbox state is used to toggle a class on the parent container, which changes the CSS variables.</p>
+            <div class="theme-code">
+              <code>:root { --bg-color: white; --text-color: black; }</code>
+              <code>.dark-theme { --bg-color: #222; --text-color: white; }</code>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+        .theme-demo {
+          margin: 2rem 0;
+          padding: 2rem;
+          border-radius: 0.5rem;
+          background-color: var(--bg-color, #ffffff);
+          color: var(--text-color, #222222);
+          --bg-color: #ffffff;
+          --text-color: #222222;
+          --primary-color: #3498db;
+          --secondary-color: #e74c3c;
+          --border-color: #dee2e6;
+          --card-bg: #f8f9fa;
+          --code-bg: #f1f1f1;
+          transition: all 0.3s ease;
+        }
+
+        .theme-demo.dark-theme {
+          --bg-color: #222222;
+          --text-color: #f8f9fa;
+          --primary-color: #5dade2;
+          --secondary-color: #ec7063;
+          --border-color: #444444;
+          --card-bg: #333333;
+          --code-bg: #444444;
+        }
+
+        .theme-header {
+          margin-bottom: 2rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid var(--border-color);
+        }
+
+        .theme-toggle {
+          display: flex;
+          align-items: center;
+          margin-top: 1rem;
+        }
+
+        .theme-switch {
+          height: 0;
+          width: 0;
+          visibility: hidden;
+          position: absolute;
+        }
+
+        .theme-switch-label {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+          width: 60px;
+          height: 30px;
+          background: var(--primary-color);
+          border-radius: 100px;
+          position: relative;
+          transition: background-color 0.2s;
+        }
+
+        .theme-switch-label .theme-switch-inner {
+          width: 24px;
+          height: 24px;
+          border-radius: 45px;
+          background: #fff;
+          position: absolute;
+          top: 3px;
+          left: 3px;
+          transition: 0.2s;
+          box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+        }
+
+        .theme-switch:checked + .theme-switch-label .theme-switch-inner {
+          left: calc(100% - 3px);
+          transform: translateX(-100%);
+        }
+
+        .theme-label {
+          margin-left: 1rem;
+          font-weight: bold;
+        }
+
+        .theme-content {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 1.5rem;
+        }
+
+        .theme-card {
+          background-color: var(--card-bg);
+          padding: 1.5rem;
+          border-radius: 0.5rem;
+          border: 1px solid var(--border-color);
+        }
+
+        .theme-button {
+          background-color: var(--primary-color);
+          color: white;
+          border: none;
+          padding: 0.5rem 1rem;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          margin-top: 1rem;
+        }
+
+        .theme-code {
+          background-color: var(--code-bg);
+          padding: 1rem;
+          border-radius: 0.25rem;
+          margin-top: 1rem;
+          font-family: monospace;
+        }
+
+        .theme-code code {
+          display: block;
+          margin-bottom: 0.5rem;
+          color: var(--text-color);
+        }
+
+        /* This makes the checkbox control the theme */
+        .theme-switch:checked ~ .theme-content,
+        .theme-switch:checked ~ .theme-header,
+        .theme-switch:checked ~ .theme-demo {
+          --bg-color: #222222;
+          --text-color: #f8f9fa;
+          --primary-color: #5dade2;
+          --secondary-color: #ec7063;
+          --border-color: #444444;
+          --card-bg: #333333;
+          --code-bg: #444444;
+        }
+
+        /* Media query for system preference */
+        @media (prefers-color-scheme: dark) {
+          .theme-demo:not(.light-theme) {
+            --bg-color: #222222;
+            --text-color: #f8f9fa;
+            --primary-color: #5dade2;
+            --secondary-color: #ec7063;
+            --border-color: #444444;
+            --card-bg: #333333;
+            --code-bg: #444444;
+          }
+        }
+      </style>
+
+      <!-- Note: This script is optional and only for demonstration purposes.
+           The dark mode toggle works without JavaScript using the CSS :checked pseudo-class! -->
+      <script>
+        // This script is only for demonstration purposes
+        // The dark mode toggle works without JavaScript!
+        document.getElementById('theme-switch').addEventListener('change', function(e) {
+          document.querySelector('.theme-demo').classList.toggle('dark-theme', e.target.checked);
+        });
+      </script>
+    </section>
+
+    <section id="print-styles">
+      <h2>Print Styles</h2>
+      <p>
+        CSS media queries allow you to create print-friendly versions of your web pages without JavaScript.
+      </p>
+
+      <div class="print-demo" style="margin: 2rem 0; padding: 1rem; border: 1px solid #dee2e6; border-radius: 0.5rem;">
+        <header class="print-header">
+          <h3>Print-Optimized Content</h3>
+          <p>This section demonstrates how to optimize content for printing using CSS media queries.</p>
+          <button class="print-button" onclick="window.print()">Print This Page</button>
+        </header>
+
+        <div class="print-content">
+          <article class="print-article">
+            <h4>Article Title</h4>
+            <p class="print-meta">Published: May 15, 2025 | Author: Web Standards Committee</p>
+            <p>This is an example article that will look different when printed. When you print this page, you'll notice:</p>
+            <ul>
+              <li>Navigation menus and unnecessary UI elements are hidden</li>
+              <li>The layout is simplified for better readability on paper</li>
+              <li>Colors are optimized for printing (black text on white background)</li>
+              <li>Links show their URLs for reference</li>
+              <li>Page breaks are controlled to avoid splitting important content</li>
+            </ul>
+            <p>This <a href="https://example.com/print-styles">example link</a> will show its URL when printed.</p>
+          </article>
+
+          <aside class="print-sidebar">
+            <h4>Related Information</h4>
+            <p>This sidebar will be hidden when printing to save ink and focus on the main content.</p>
+            <div class="print-ad" style="background-color: #f1c40f; padding: 1rem; border-radius: 0.25rem; text-align: center; margin-top: 1rem;">
+              <p>This is an advertisement that will be hidden when printing.</p>
+            </div>
+          </aside>
+        </div>
+
+        <div class="print-table-container">
+          <h4>Data Table Example</h4>
+          <p>Tables are specially formatted for printing to ensure readability.</p>
+          <table class="print-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Screen Display</th>
+                <th>Print Display</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Colors</td>
+                <td>Full color palette</td>
+                <td>Optimized for black & white</td>
+              </tr>
+              <tr>
+                <td>Navigation</td>
+                <td>Visible</td>
+                <td>Hidden</td>
+              </tr>
+              <tr>
+                <td>Links</td>
+                <td>Clickable text</td>
+                <td>Text with URL</td>
+              </tr>
+              <tr>
+                <td>Images</td>
+                <td>As designed</td>
+                <td>Optimized resolution</td>
+              </tr>
+              <tr>
+                <td>Backgrounds</td>
+                <td>As designed</td>
+                <td>Removed to save ink</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <footer class="print-footer">
+          <p>Page footer with copyright information that will be repeated on every printed page.</p>
+        </footer>
+      </div>
+
+      <style>
+        /* Regular styles for screen display */
+        .print-demo {
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .print-header {
+          margin-bottom: 2rem;
+          padding-bottom: 1rem;
+          border-bottom: 1px solid #dee2e6;
+        }
+
+        .print-button {
+          background-color: #3498db;
+          color: white;
+          border: none;
+          padding: 0.5rem 1rem;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          margin-top: 1rem;
+        }
+
+        .print-content {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          gap: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        .print-article {
+          background-color: #f8f9fa;
+          padding: 1.5rem;
+          border-radius: 0.5rem;
+        }
+
+        .print-meta {
+          color: #6c757d;
+          font-size: 0.9rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .print-sidebar {
+          background-color: #f8f9fa;
+          padding: 1.5rem;
+          border-radius: 0.5rem;
+        }
+
+        .print-table-container {
+          margin: 2rem 0;
+        }
+
+        .print-table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 1rem;
+        }
+
+        .print-table th, .print-table td {
+          border: 1px solid #dee2e6;
+          padding: 0.75rem;
+          text-align: left;
+        }
+
+        .print-table th {
+          background-color: #e9ecef;
+        }
+
+        .print-table tr:nth-child(even) {
+          background-color: #f8f9fa;
+        }
+
+        .print-footer {
+          margin-top: 2rem;
+          padding-top: 1rem;
+          border-top: 1px solid #dee2e6;
+          font-size: 0.9rem;
+          color: #6c757d;
+        }
+
+        /* Print-specific styles */
+        @media print {
+          /* General print styles */
+          body {
+            font-size: 12pt;
+            line-height: 1.5;
+            color: #000;
+            background: #fff;
+          }
+
+          /* Hide navigation, buttons, and other non-essential elements */
+          nav, .print-button, .theme-toggle, .back-to-top-button {
+            display: none !important;
+          }
+
+          /* Ensure white background and black text */
+          .print-demo {
+            background: white !important;
+            color: black !important;
+            padding: 0 !important;
+            border: none !important;
+          }
+
+          /* Adjust layout for print */
+          .print-content {
+            display: block;
+          }
+
+          /* Hide sidebar and ads */
+          .print-sidebar {
+            display: none;
+          }
+
+          /* Simplify article styling */
+          .print-article {
+            background: none !important;
+            padding: 0 !important;
+            border: none !important;
+          }
+
+          /* Show URLs for links */
+          .print-article a::after {
+            content: " (" attr(href) ")";
+            font-size: 90%;
+            font-style: italic;
+          }
+
+          /* Optimize tables for print */
+          .print-table {
+            border-collapse: collapse;
+            width: 100%;
+          }
+
+          .print-table th {
+            background-color: #f1f1f1 !important;
+          }
+
+          /* Control page breaks */
+          h2, h3, h4 {
+            page-break-after: avoid;
+          }
+
+          img, table {
+            page-break-inside: avoid;
+          }
+
+          /* Add page numbers */
+          @page {
+            margin: 2cm;
+          }
+
+          /* Footer for each printed page */
+          .print-footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #000;
+            padding-top: 10px;
+          }
+        }
+      </style>
+    </section>
+
+    <section id="minimal-js-features">
+      <h2>Modern Features with Minimal JavaScript</h2>
+      <p>
+        These features demonstrate the power of modern web standards with minimal JavaScript support.
+      </p>
+
+      <h3>1. Web Share API</h3>
+      <p>Share content using the device's native sharing capabilities:</p>
+      <button onclick="navigator.share({title: 'Modern HTML & CSS Showcase', url: window.location.href})" style="background-color: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">
+        Share This Page
+      </button>
+      <p><small>Note: Web Share API requires HTTPS and is supported in most modern browsers.</small></p>
+
+      <h3>2. Clipboard API</h3>
+      <div class="copy-section" style="background-color: #f8f9fa; padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+        <pre style="background-color: #2c3e50; color: #ecf0f1; padding: 1rem; border-radius: 0.5rem; overflow-x: auto;"><code>const greeting = "Hello, HTML!";</code></pre>
+        <button onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent).then(() => alert('Copied to clipboard!'))" style="background-color: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; margin-top: 0.5rem;">
+          Copy Code
+        </button>
+      </div>
+
+      <h3>3. Native Lazy Loading</h3>
+      <p>Improve page performance with the loading="lazy" attribute:</p>
+      <div class="grid">
+        <div>
+          <h4>Regular Image</h4>
+          <img src="icon.png" alt="Regular loaded image" style="max-width: 100%; height: auto;">
+        </div>
+        <div>
+          <h4>Lazy Loaded Image</h4>
+          <img src="icon.png" loading="lazy" alt="Lazy loaded image" style="max-width: 100%; height: auto;">
+        </div>
+      </div>
+      <p><small>The lazy loaded image will only load when it comes into the viewport, saving bandwidth.</small></p>
+
+      <h3>6. Scroll-To-Text Fragment</h3>
+      <p>Link directly to specific text on a page:</p>
+      <div style="background-color: #f8f9fa; padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;">
+        <p>This is a paragraph with <span id="highlighted-text" style="background-color: yellow;">some highlighted text that can be linked to directly</span> using text fragments.</p>
+        <a href="#:~:text=some%20highlighted%20text%20that%20can%20be%20linked%20to%20directly" style="color: #3498db;">
+          Jump to Highlighted Text
+        </a>
+      </div>
+      <p><small>Note: Text fragments require HTTPS and are supported in Chromium-based browsers.</small></p>
+
+      <h3>7. Enhanced Form Validation Feedback</h3>
+      <form id="enhanced-form" style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 0.5rem; margin: 1rem 0;">
+        <div class="grid">
+          <div>
+            <label for="enhanced-email">Email:</label>
+            <input type="email" id="enhanced-email" required style="border: 1px solid #ced4da; border-radius: 0.25rem;">
+            <div id="email-feedback" style="color: #e74c3c; font-size: 0.875rem; margin-top: 0.25rem;"></div>
+          </div>
+          <div>
+            <label for="enhanced-password">Password (min 8 characters):</label>
+            <input type="password" id="enhanced-password" minlength="8" required style="border: 1px solid #ced4da; border-radius: 0.25rem;">
+            <div id="password-feedback" style="color: #e74c3c; font-size: 0.875rem; margin-top: 0.25rem;"></div>
+          </div>
+        </div>
+        <button type="submit" style="background-color: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; margin-top: 1rem;">Submit</button>
+      </form>
+      <script>
+        document.getElementById('enhanced-form').addEventListener('submit', function(e) {
+          const email = document.getElementById('enhanced-email');
+          const password = document.getElementById('enhanced-password');
+          let isValid = true;
+
+          // Clear previous feedback
+          document.getElementById('email-feedback').textContent = '';
+          document.getElementById('password-feedback').textContent = '';
+
+          // Email validation
+          if (!email.validity.valid) {
+            let message = '';
+            if (email.validity.valueMissing) {
+              message = 'Email is required';
+            } else if (email.validity.typeMismatch) {
+              message = 'Please enter a valid email address';
+            }
+            document.getElementById('email-feedback').textContent = message;
+            isValid = false;
+          }
+
+          // Password validation
+          if (!password.validity.valid) {
+            let message = '';
+            if (password.validity.valueMissing) {
+              message = 'Password is required';
+            } else if (password.validity.tooShort) {
+              message = `Password must be at least ${password.minLength} characters`;
+            }
+            document.getElementById('password-feedback').textContent = message;
+            isValid = false;
+          }
+
+          if (!isValid) {
+            e.preventDefault();
+          }
+        });
+      </script>
+
+      <h3>8. Intersection Observer for Scroll Animations</h3>
+      <div class="scroll-animate-container" style="margin: 2rem 0;">
+        <div class="scroll-animate" style="opacity: 0; transform: translateY(20px); transition: opacity 1s, transform 1s; background-color: #3498db; color: white; padding: 2rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+          This element fades in when scrolled into view
+        </div>
+        <div class="scroll-animate" style="opacity: 0; transform: translateY(20px); transition: opacity 1s, transform 1s; background-color: #e74c3c; color: white; padding: 2rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+          This element also animates on scroll
+        </div>
+        <div class="scroll-animate" style="opacity: 0; transform: translateY(20px); transition: opacity 1s, transform 1s; background-color: #2ecc71; color: white; padding: 2rem; border-radius: 0.5rem;">
+          And this one too!
+        </div>
+      </div>
+      <script>
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = 'translateY(0)';
+            }
+          });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.scroll-animate').forEach(el => observer.observe(el));
+      </script>
+
+      <h3>9. Web Speech API</h3>
+      <div class="speech-demo" style="background-color: #f8f9fa; padding: 1.5rem; border-radius: 0.5rem; margin: 1rem 0;">
+        <textarea id="speech-text" style="width: 100%; padding: 0.5rem; border: 1px solid #ced4da; border-radius: 0.25rem; margin-bottom: 1rem;" rows="3">Hello! This is the Web Speech API in action.</textarea>
+        <button id="speak-button" onclick="window.speechSynthesis.speak(new SpeechSynthesisUtterance(document.getElementById('speech-text').value))" style="background-color: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">
+          Speak Text
+        </button>
+      </div>
+
+      <h3>11. CSS Scroll Snap with Navigation</h3>
+      <div style="margin: 2rem 0;">
+        <div class="scroll-container" style="scroll-snap-type: x mandatory; display: flex; overflow-x: auto; gap: 1rem; padding: 1rem; border: 1px solid #dee2e6; border-radius: 0.5rem; margin-bottom: 1rem;">
+          <div class="scroll-item" style="scroll-snap-align: start; flex: 0 0 80%; background-color: #3498db; padding: 2rem; color: white; border-radius: 0.5rem; text-align: center;">
+            <h4>Slide 1</h4>
+            <p>Scroll horizontally or use the navigation buttons below.</p>
+          </div>
+          <div class="scroll-item" style="scroll-snap-align: start; flex: 0 0 80%; background-color: #e74c3c; padding: 2rem; color: white; border-radius: 0.5rem; text-align: center;">
+            <h4>Slide 2</h4>
+            <p>Notice how the scrolling snaps to each slide.</p>
+          </div>
+          <div class="scroll-item" style="scroll-snap-align: start; flex: 0 0 80%; background-color: #2ecc71; padding: 2rem; color: white; border-radius: 0.5rem; text-align: center;">
+            <h4>Slide 3</h4>
+            <p>The buttons below enhance the native scroll snap behavior.</p>
+          </div>
+        </div>
+        <div class="controls" style="display: flex; justify-content: center; gap: 1rem;">
+          <button onclick="document.querySelector('.scroll-container').scrollBy({left: -window.innerWidth * 0.8, behavior: 'smooth'})" style="background-color: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Previous</button>
+          <button onclick="document.querySelector('.scroll-container').scrollBy({left: window.innerWidth * 0.8, behavior: 'smooth'})" style="background-color: #3498db; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Next</button>
+        </div>
+      </div>
+
+      <h3>12. CSS Variables Manipulation</h3>
+      <div class="theme-container" style="--primary-color: #3498db; --text-color: white; background-color: var(--primary-color); color: var(--text-color); padding: 2rem; border-radius: 0.5rem; margin: 1rem 0; transition: all 0.3s;">
+        <h4>Dynamic Theme with CSS Variables</h4>
+        <p>This container's colors are controlled by CSS custom properties (variables).</p>
+        <p>Use the controls below to change the colors:</p>
+
+        <div class="grid" style="margin-top: 1rem;">
+          <div>
+            <label for="primary-color">Primary Color:</label>
+            <input type="color" id="primary-color" value="#3498db" onchange="document.querySelector('.theme-container').style.setProperty('--primary-color', this.value)" style="width: 100%;">
+          </div>
+          <div>
+            <label for="text-color">Text Color:</label>
+            <input type="color" id="text-color" value="#ffffff" onchange="document.querySelector('.theme-container').style.setProperty('--text-color', this.value)" style="width: 100%;">
+          </div>
+        </div>
+
+        <button onclick="document.querySelector('.theme-container').style.setProperty('--primary-color', '#3498db'); document.querySelector('.theme-container').style.setProperty('--text-color', '#ffffff'); document.getElementById('primary-color').value = '#3498db'; document.getElementById('text-color').value = '#ffffff';" style="background-color: white; color: #3498db; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; margin-top: 1rem;">
+          Reset Colors
+        </button>
+      </div>
+    </section>
+
+    <footer style="background-color: #f8f9fa; padding: 2rem; border-radius: 0.5rem; margin-top: 3rem; border-top: 4px solid #3498db;">
+      <div class="grid">
+        <div>
+          <h3 style="color: #3498db; margin-top: 0;">Modern HTML & CSS Showcase</h3>
+          <p>
+            Demonstrating the power of modern web standards without relying on JavaScript frameworks.
+            This showcase highlights the incredible capabilities of HTML5 and CSS3 as of May 2025.
+          </p>
+          <p>
+            <a href="#" style="color: #3498db; text-decoration: none; border-bottom: 1px dotted #3498db;">Terms of Use</a> •
+            <a href="#" style="color: #3498db; text-decoration: none; border-bottom: 1px dotted #3498db;">Privacy Policy</a> •
+            <a href="#" style="color: #3498db; text-decoration: none; border-bottom: 1px dotted #3498db;">Contact</a>
+          </p>
+        </div>
+
+        <div>
+          <h4 style="color: #3498db; margin-top: 0;">Resources</h4>
+          <ul style="list-style: none; padding-left: 0;">
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" style="color: #3498db; text-decoration: none; border-bottom: 1px dotted #3498db;">MDN Web Docs - HTML</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" style="color: #3498db; text-decoration: none; border-bottom: 1px dotted #3498db;">MDN Web Docs - CSS</a></li>
+            <li><a href="https://www.w3.org/TR/html5/" style="color: #3498db; text-decoration: none; border-bottom: 1px dotted #3498db;">W3C HTML5 Specification</a></li>
+            <li><a href="https://www.w3.org/Style/CSS/" style="color: #3498db; text-decoration: none; border-bottom: 1px dotted #3498db;">W3C CSS Specifications</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #dee2e6; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+        <p style="margin: 0;">
+          <small>
+            © 2025 delneg. Built with pure HTML and CSS.
+            Styled with <a href="https://picocss.com" style="color: #3498db; text-decoration: none; border-bottom: 1px dotted #3498db;">Pico CSS</a>.
+          </small>
+        </p>
+
+        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+          <a href="#" aria-label="GitHub" style="color: #3498db; text-decoration: none; font-size: 1.5rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter" style="color: #3498db; text-decoration: none; font-size: 1.5rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" style="color: #3498db; text-decoration: none; font-size: 1.5rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div style="margin-top: 1rem; text-align: center;">
+        <a href="#main-content" id="back-to-top" class="back-to-top-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+          Back to Top
+        </a>
+      </div>
+
+      <style>
+        .back-to-top-button {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          background-color: #3498db;
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          border-radius: 5px;
+          cursor: pointer;
+          text-decoration: none;
+        }
+
+        .back-to-top-button:hover {
+          background-color: #2980b9;
+        }
+      </style>
+    </footer>
+  </main>
+
+</body>
+
+</html>
